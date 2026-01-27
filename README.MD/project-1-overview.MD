@@ -21,7 +21,7 @@ This project helped me build confidence working directly in the AWS console and 
 
 I connected to the EC2 instance securely using SSH and a `.pem` key pair. Proper file permissions were set on the key to allow authentication.
 
-![SSH Login](screenshots/ssh-login.png)
+![SSH Login](../screenshots/ssh-login.png)
 
 ---
 
@@ -29,7 +29,7 @@ I connected to the EC2 instance securely using SSH and a `.pem` key pair. Proper
 
 After connecting to the instance, I updated system packages and installed NGINX using the default Amazon Linux repositories. The NGINX service was then started and enabled to run on boot.
 
-![NGINX Installation](screenshots/nginx-install.png)
+![NGINX Install](../screenshots/nginx-install.png)
 
 ---
 
@@ -42,10 +42,10 @@ To secure the instance, I configured AWS security groups with the following inbo
 This ensured the server was accessible only where necessary while maintaining security.
 
 ### Security Groups Overview
-![Security Groups List](screenshots/security-groups-list.png)
+![Security Groups List](../screenshots/security-groups-list.png)
 
 ### Inbound Rules
-![Security Group Rules](screenshots/security-group-rules.png)
+![Security Group Rules](../screenshots/security-group-rules.png)
 
 ---
 
@@ -53,7 +53,7 @@ This ensured the server was accessible only where necessary while maintaining se
 
 Once NGINX was running, I verified the deployment by accessing the instance’s public IP address in a browser. The static webpage confirms that the web server is correctly installed and publicly accessible.
 
-![Deployed Website](screenshots/proj1-ec2-website.png)
+![Deployed Website](../screenshots/proj1-ec2-website.png)
 
 ---
 
