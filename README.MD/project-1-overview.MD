@@ -67,3 +67,6 @@ Through this project, I gained practical experience with:
 - Deploying and validating a web server in the cloud
 
 This project represents my first end-to-end cloud deployment and serves as a foundation for more advanced AWS and DevOps work.
+
+
+
