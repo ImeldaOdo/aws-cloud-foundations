@@ -66,3 +66,20 @@ I then stopped the NGINX service directly on the instance.
 
 ```bash
 sudo systemctl stop nginx
+sudo systemctl status nginx
+
+
+After stopping NGINX, the website became unreachable from the browser even though:
+
+- The EC2 instance was still running  
+- Port 80 (HTTP) was still allowed in the security group  
+- Network configuration remained unchanged  
+
+This indicated that the failure was **service-related**, not a networking issue.
+
+### Verifying the Service Locally with `curl`
+
+To confirm whether the issue was internal to the server or related to external access, I tested the web server locally from within the EC2 instance:
+
+```bash
+curl -I http://localhost
